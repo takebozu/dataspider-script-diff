@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ProjectEntriesTransformer" default="jar" basedir="." >
+	<target name="jar">
+		<jar jarfile="jar/sod-transformer.jar">
+			<fileset dir="bin" includes="**/*.class" />
+			<fileset dir="bin" includes="**/*.xsl" />
+			<fileset dir="src" includes="**/*.java" />
+			  
+			<manifest>
+			   <attribute name="Main-Class" value="com.terrasky.sod.Crawler"/>
+			   <attribute name="Implementation-Title"   value="SkyOnDemand Script Transformer"/>
+			   <attribute name="Implementation-Version" value="0.1"/>
+			   <attribute name="Implementation-Vendor"  value="TerraSky Labs"/>
+		  </manifest>
+		</jar>
+	</target>
+</project>
